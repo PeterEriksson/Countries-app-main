@@ -23,6 +23,7 @@ export async function getServerSideProps() {
 
 export default function Home({ data }) {
   /* console.log("data", data); */
+  /* fesanfsdnfsm,d. */
   const router = useRouter();
 
   const { darkTheme } = useContext(Context);
