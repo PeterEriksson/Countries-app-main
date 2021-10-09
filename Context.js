@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 const Context = React.createContext();
 
-function ContextProvider({ children, data }) {
+function ContextProvider({ children, resultCountries }) {
   const [darkTheme, setDarkTheme] = useState(true);
 
   const toggleTheme = () => {

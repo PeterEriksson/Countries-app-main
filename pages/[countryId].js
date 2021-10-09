@@ -22,11 +22,8 @@ function CountryDetail({ data }) {
   let countryId = router.query.countryId;
 
   const [allCountries, setAllCountries] = useState([]);
-  /*   const [borderCountries, setBorderCountries] = useState([]); */
 
   const { darkTheme } = useContext(Context);
-
-  /*  let __country = allCountries?.find((item) => item.name.common === countryId); */
 
   /* Try getting data from getServerSideProps >>> */
   let __country = data.find((item) => item.name.common === countryId);
