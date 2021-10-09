@@ -5,6 +5,7 @@ import Nav from "../components/Nav";
 import Head from "next/head";
 import { ArrowLeftIcon } from "@heroicons/react/outline";
 import { Context } from "../Context";
+import Router from "next/router";
 
 const url = "https://restcountries.com/v3.1/all";
 export async function getServerSideProps() {
@@ -18,6 +19,26 @@ export async function getServerSideProps() {
 }
 
 function CountryDetail({ data }) {
+  const [loading, setLoading] = React.useState(false);
+  useEffect(() => {
+    const start = () => {
+      console.log("start");
+      setLoading(true);
+    };
+    const end = () => {
+      console.log("findished");
+      setLoading(false);
+    };
+    Router.events.on("routeChangeStart", start);
+    Router.events.on("routeChangeComplete", end);
+    Router.events.on("routeChangeError", end);
+    return () => {
+      Router.events.off("routeChangeStart", start);
+      Router.events.off("routeChangeComplete", end);
+      Router.events.off("routeChangeError", end);
+    };
+  }, []);
+
   const router = useRouter();
   let countryId = router.query.countryId;
 
@@ -229,6 +250,7 @@ function CountryDetail({ data }) {
           </div>
         </section>
       </main>
+      }
     </div>
   );
 }
