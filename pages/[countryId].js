@@ -6,6 +6,7 @@ import Head from "next/head";
 import { ArrowLeftIcon } from "@heroicons/react/outline";
 import { Context } from "../Context";
 import Router from "next/router";
+import Spinner from "../components/Spinner";
 
 const url = "https://restcountries.com/v3.1/all";
 export async function getServerSideProps() {
@@ -22,11 +23,11 @@ function CountryDetail({ data }) {
   const [loading, setLoading] = React.useState(false);
   useEffect(() => {
     const start = () => {
-      console.log("start");
+      /* console.log("start"); */
       setLoading(true);
     };
     const end = () => {
-      console.log("findished");
+      /*  console.log("findished"); */
       setLoading(false);
     };
     Router.events.on("routeChangeStart", start);
@@ -109,6 +110,7 @@ function CountryDetail({ data }) {
           darkTheme ? "bg-mainDark text-white" : "bg-mainLightBg text-black"
         }  transition duration-200 ease-in`}
       >
+        {loading && <Spinner />}
         <section className="flex flex-col w-full items-center">
           {/* BACK BUTTON */}
           {/* set div w-60 -> positions button at right place. */}
