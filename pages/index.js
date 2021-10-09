@@ -222,7 +222,7 @@ export default function Home({ data }) {
                   className={`font-medium text-sm  w-full flex-grow pl-8 outline-none  ${
                     darkTheme ? "bg-mainDarkGrayish" : "bg-whiteSmokeBg"
                   } transition duration-200 ease-in`}
-                  placeholder="Search for a country..."
+                  placeholder="heej"
                 />
               </form>
               <div className="w-40">

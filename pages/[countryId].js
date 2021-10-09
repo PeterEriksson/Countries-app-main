@@ -252,7 +252,6 @@ function CountryDetail({ data }) {
           </div>
         </section>
       </main>
-      }
     </div>
   );
 }
