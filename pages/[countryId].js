@@ -26,21 +26,6 @@ function CountryDetail({ data }) {
 
   const { darkTheme } = useContext(Context);
 
-  useEffect(() => {
-    //try remove
-    const getAllCountries = async () => {
-      try {
-        const res = await fetch("https://restcountries.com/v3.1/all");
-        const data = await res.json();
-        setAllCountries(data);
-      } catch (err) {
-        console.log(err);
-      }
-    };
-
-    getAllCountries();
-  }, [countryId]);
-
   /*  let __country = allCountries?.find((item) => item.name.common === countryId); */
 
   /* Try getting data from getServerSideProps >>> */
