@@ -20,7 +20,7 @@ export async function getServerSideProps() {
 }
 
 function CountryDetail({ data }) {
-  const [loading, setLoading] = React.useState(false);
+  const [loading, setLoading] = useState(false);
   useEffect(() => {
     const start = () => {
       /* console.log("start"); */

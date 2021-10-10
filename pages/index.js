@@ -8,6 +8,8 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import Select from "react-select";
 import { Context } from "../Context";
+import Router from "next/router";
+import Spinner from "../components/Spinner";
 
 /* https://www.youtube.com/watch?v=iW39Merz0zE */
 const url = "https://restcountries.com/v3.1/all";
@@ -23,6 +25,7 @@ export async function getServerSideProps() {
 
 export default function Home({ data }) {
   const router = useRouter();
+  const [loading, setLoading] = useState(false);
 
   const { darkTheme } = useContext(Context);
 
@@ -39,6 +42,25 @@ export default function Home({ data }) {
   ];
   const [region, setRegion] = useState(options[0]);
   const [widthState, setWidthState] = useState(null);
+
+  useEffect(() => {
+    const start = () => {
+      /* console.log("start"); */
+      setLoading(true);
+    };
+    const end = () => {
+      /*  console.log("findished"); */
+      setLoading(false);
+    };
+    Router.events.on("routeChangeStart", start);
+    Router.events.on("routeChangeComplete", end);
+    Router.events.on("routeChangeError", end);
+    return () => {
+      Router.events.off("routeChangeStart", start);
+      Router.events.off("routeChangeComplete", end);
+      Router.events.off("routeChangeError", end);
+    };
+  }, []);
 
   useEffect(() => {
     setWidthState(window.innerWidth);
@@ -139,6 +161,7 @@ export default function Home({ data }) {
           darkTheme ? "bg-mainDark text-white" : "bg-mainLightBg text-black"
         }  transition duration-200 ease-in `}
       >
+        {loading && <Spinner />}
         {/* div for (inner)body */}
         {/* Mobile/Smaller size */}
         {widthState <= 659 ? (
