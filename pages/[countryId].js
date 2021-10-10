@@ -95,8 +95,6 @@ function CountryDetail({ data }) {
     return <p className="text-gray-400">{string}</p>;
   };
 
-  /* console.log(__country); */
-
   return (
     <div className="font-mainFont">
       <Head>

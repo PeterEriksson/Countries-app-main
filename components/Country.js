@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 import { Context } from "../Context";
 
-function Country({ currency, item }) {
+function Country({ item }) {
   const router = useRouter();
   const { darkTheme } = useContext(Context);
 
