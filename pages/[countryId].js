@@ -133,7 +133,7 @@ function CountryDetail({ data }) {
                 src={__country?.flags.png}
                 alt=""
                 effect=""
-                className="rounded-md smallMediumBreakpoint:mr-12 smallMediumBreakpoint:mt-5"
+                className="rounded-md smallMediumBreakpoint:mr-12 "
                 /* height={320}
               width={250} */
               />
