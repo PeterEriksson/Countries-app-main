@@ -112,7 +112,7 @@ function CountryDetail({ data }) {
         <section className="flex flex-col w-full items-center">
           {/* BACK BUTTON */}
           {/* set div w-60 -> positions button at right place. */}
-          <div className="w-60 mb-10 flex flex-col smallMediumBreakpoint:mr-80 ">
+          <div className="w-60 mb-5 flex flex-col smallMediumBreakpoint:mr-auto ">
             <section
               onClick={() => router.push("/")}
               className={`w-2/5  cursor-pointer space-x-2 ${
@@ -127,19 +127,20 @@ function CountryDetail({ data }) {
           </div>
 
           {/* DIV FOR FLAG DOWN TO BORDER CTRIES */}
-          <div className="flex flex-col smallMediumBreakpoint:flex-row">
-            {/* Country Flag */}
-            <LazyLoadImage
-              src={__country?.flags.svg}
-              alt=""
-              effect=""
-              className="rounded-md smallMediumBreakpoint:w-44 smallMediumBreakpoint:h-72 w-44 h-56 smallMediumBreakpoint:mr-16 smallMediumBreakpoint:mt-5"
-              /* height={320}
+          <div className="flex flex-col items-center smallMediumBreakpoint:flex-row">
+            <div className="w-3/4 smallMediumBreakpoint:w-2/4">
+              <LazyLoadImage
+                src={__country?.flags.png}
+                alt=""
+                effect=""
+                className="rounded-md smallMediumBreakpoint:mr-12 smallMediumBreakpoint:mt-5"
+                /* height={320}
               width={250} */
-            />
+              />
+            </div>
             {/* Country Name */}
             {/* DIV FOR NAME DOWN TO BORDERS  */}
-            <div className="flex flex-col smallMediumBreakpoint:ml-20">
+            <div className="flex flex-col smallMediumBreakpoint:ml-20 ">
               <div className="w-60">
                 <h2 className="mt-5 mb-5 font-extrabold text-xl">
                   {__country?.name.common}
