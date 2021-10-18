@@ -13,7 +13,8 @@ function MainPage() {
   useEffect(() => {
     const getAllCountries = async () => {
       try {
-        const res = await fetch("https://restcountries.eu/rest/v2/all");
+        /* const res = await fetch("https://restcountries.eu/rest/v2/all"); */
+        const res = await fetch("https://restcountries.com/v3.1/all");
         const data = await res.json();
         setAllCountries(data);
       } catch (err) {

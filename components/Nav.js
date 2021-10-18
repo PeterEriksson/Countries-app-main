@@ -15,7 +15,7 @@ function Nav() {
   return (
     /* margin on the sides: 10 on each side. */
     <div
-      className={`w-screen h-20 border-b-4 ${
+      className={`w-screen h-20 border-b shadow-md ${
         darkTheme
           ? "border-borderColor bg-mainDarkGrayish"
           : "border-borderLightTest bg-whiteSmokeBg"

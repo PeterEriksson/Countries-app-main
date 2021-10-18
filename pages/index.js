@@ -230,9 +230,9 @@ export default function Home({ data }) {
             <div className="flex flex-row justify-between mb-5 items-center md:mx-8 lg:mx-10 mx-5">
               <form
                 onSubmit={(e) => handleForm(e)}
-                className={`flex flex-row items-center h-12 w-80 py-4  ${
+                className={`flex flex-row items-center shadow-sm h-12 w-80 py-4  ${
                   darkTheme
-                    ? "bg-mainDarkGrayish border-4 border-borderColor"
+                    ? "bg-mainDarkGrayish border-2 border-borderColor"
                     : "bg-whiteSmokeBg   border-lightBorderColor"
                 }     rounded-lg transition duration-200 ease-in`}
               >
