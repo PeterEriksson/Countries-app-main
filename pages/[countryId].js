@@ -119,7 +119,7 @@ function CountryDetail({ data }) {
                 darkTheme
                   ? "text-gray-300 bg-mainDarkGrayish border-borderColor"
                   : "text-gray-800 bg-whiteSmokeBg border-borderLightTest"
-              }   py-2 rounded-sm flex flex-row justify-center border-2 items-center transition duration-200 ease-in hover:scale-110`}
+              }   py-2 rounded-sm flex flex-row justify-center border-2 items-center `}
             >
               <ArrowLeftIcon className={`w-4 h-4  `} />
               <button>Back</button>
