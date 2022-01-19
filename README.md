@@ -51,9 +51,16 @@ Project is created with:
 
 ## What I learned
 
-- Showing a loading indicator when moving from one route to another in Next.js
+- Next.js dynamic routing
+- Next.js data fetching
+- Handling search input: Non case sensitive, Part of a string that matches. (with the help of toLowerCase and includes)
 - Practicing responsive design.
-- Drag and drop items with the help of react-beautiful-dnd library
+- Working with react-select library for displaying a nice looking drop-down menu.
+
+## TODO
+
+- How to get user's previous path with Next.js? 
+
 
 ## Author
 
