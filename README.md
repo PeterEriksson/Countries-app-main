@@ -1,6 +1,6 @@
 # 🌎 REST Countries app
  Challenge from frontendmentor.io. 
- Working with the rest sountries api, info + detailed info about all countries is presented. Color theme switcher to toggle between light and dark mode.
+ Working with the rest countries api, info + detailed info about all countries is presented. Color theme switcher to toggle between light and dark mode.
 
 LINK TO CHALLENGE: https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca
 
