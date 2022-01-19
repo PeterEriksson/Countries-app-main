@@ -1,6 +1,6 @@
-# 🌎 REST Countries API with color theme switcher
+# 🌎 REST Countries app
  Challenge from frontendmentor.io. 
- Working with the rest sountries api, info + detailed info about all countries is presented.
+ Working with the rest sountries api, info + detailed info about all countries is presented. Color theme switcher to toggle between light and dark mode.
 
 LINK TO CHALLENGE: https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca
 
@@ -22,6 +22,7 @@ Project is created with:
 - Tailwind CSS
 - Flexbox
 - react-select
+- Context api for switching between light/dark mode
 - Netlify (hosting)
 - Hero icons
 
@@ -34,7 +35,7 @@ Project is created with:
 - Click through to the border countries on the detail page
 - Toggle the color scheme between light and dark mode
 - Responsive layout
-- Toggle light and dark mode
+ 
 
 ## Screenshots
 
