@@ -1,5 +1,6 @@
-# 📝 todo-app
-Todo app challenge from frontendmentor.io. 
+# 📝 REST Countries API with color theme switcher
+ Challenge from frontendmentor.io. 
+ Working with the rest sountries api, info + detailed info about all countries is presented.
 
 LINK TO CHALLENGE: https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca
 
