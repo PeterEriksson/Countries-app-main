@@ -56,7 +56,7 @@ Project is created with:
 - Next.js data fetching
 - Handling search input: Non case sensitive, Part of a string that matches. (with the help of toLowerCase and includes)
 - Practicing responsive design.
-- Working with react-select library for displaying a nice looking drop-down menu.
+- Working with react-select library for displaying a nice drop-down menu.
 
 ## TODO
 
