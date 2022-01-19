@@ -49,6 +49,7 @@ Project is created with:
 
 ## Links
 - Live Site URL: [Countries app challenge](https://countries-app-peter.netlify.app/)
+- Link to challenge: [FrontendMentor rest countries challenge](https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca)
 
 ## What I learned
 
