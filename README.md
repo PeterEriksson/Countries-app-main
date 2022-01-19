@@ -1,4 +1,4 @@
-# 📝 REST Countries API with color theme switcher
+# 🌎 REST Countries API with color theme switcher
  Challenge from frontendmentor.io. 
  Working with the rest sountries api, info + detailed info about all countries is presented.
 
