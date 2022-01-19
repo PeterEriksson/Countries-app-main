@@ -37,7 +37,13 @@ Project is created with:
 - Toggle light and dark mode
 
 ## Screenshots
+
+#### Home page
+ ![countries home](https://user-images.githubusercontent.com/17027312/150142885-99a1861d-774b-4518-92b3-e3e51ef8381a.png)
  
+ #### Country details page
+![country detail](https://user-images.githubusercontent.com/17027312/150143180-31cecd74-1507-4dc8-9431-cb9bfbd55cdf.png)
+
 
 
 ## Links
