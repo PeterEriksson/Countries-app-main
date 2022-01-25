@@ -55,7 +55,7 @@ Project is created with:
 
 - Next.js dynamic routing
 - Next.js data fetching
-- Handling search input: Non case sensitive, Part of a string that matches. (with the help of toLowerCase and includes)
+- Handling search input: Non case sensitive + Part of a string that matches.
 - Practicing responsive design.
 - Working with react-select library for displaying a nice drop-down menu.
 
