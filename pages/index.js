@@ -158,7 +158,7 @@ export default function Home({ data }) {
       <Nav />
 
       <div
-        className={`px-5 flex flex-col items-center h-screen overflow-y-auto pt-28 ${
+        className={`//px-5 flex flex-col items-center h-screen overflow-y-auto pt-28 ${
           darkTheme ? "bg-mainDark text-white" : "bg-mainLightBg text-black"
         }  transition duration-200 ease-in `}
       >
@@ -166,10 +166,10 @@ export default function Home({ data }) {
         {/* div for (inner)body */}
         {/* Mobile/Smaller size */}
         {widthState <= 659 ? (
-          <div className="flex flex-col w-full items-center">
+          <div className="flex flex-col w-full  items-center">
             <form
               onSubmit={(e) => handleForm(e)}
-              className={`flex mb-8 flex-row items-center h-12 w-80 py-6 ${
+              className={`flex mb-8 flex-row items-center h-12 w-64 py-6 ${
                 darkTheme
                   ? "bg-mainDarkGrayish border-4 border-borderColor"
                   : "bg-whiteSmokeBg border-4 border-borderLightTest"
@@ -188,7 +188,7 @@ export default function Home({ data }) {
             </form>
             {/* FILTER */}
             {/* same w as form container */}
-            <div className="w-80 mb-8">
+            <div className="w-64 mb-8">
               <Select
                 className="w-1/2 "
                 placeholder="Filter by region"
@@ -241,12 +241,12 @@ export default function Home({ data }) {
             </div>
           </div>
         ) : (
-          /* LARGER sizes: */ <div className="flex flex-col w-full">
+          /* LARGER sizes: */ <div className="flex flex-col w-full    items-center">
             {/* DIV for SEARCH plus FILTER (desktop)  */}
-            <div className="flex flex-row justify-between mb-5 items-center md:mx-8 lg:mx-10 mx-5">
+            <div className="flex flex-row justify-between mb-5 items-center //md:mx-8 //lg:mx-10 //mx-5 w-10/12 ">
               <form
                 onSubmit={(e) => handleForm(e)}
-                className={`flex flex-row items-center shadow-sm h-12 w-80 py-4  ${
+                className={`flex flex-row items-center shadow-sm h-12 w-64 py-4  ${
                   darkTheme
                     ? "bg-mainDarkGrayish border-2 border-borderColor"
                     : "bg-whiteSmokeBg   border-lightBorderColor"
@@ -280,7 +280,7 @@ export default function Home({ data }) {
               </div>
             </div>
 
-            <div className="flex flex-wrap justify-center ">
+            <div className="flex flex-wrap justify-center    w-11/12">
               {/* search handler:>>> (desktop size screen)*/}
               {searchText === ""
                 ? region.label === "All"

@@ -26,7 +26,7 @@ function MainPage() {
   }, []);
 
   return (
-    <div className="px-5 flex flex-col  items-center h-screen overflow-y-auto pt-28 bg-mainDark text-white">
+    <div className="//px-5 flex flex-col  items-center h-screen overflow-y-auto pt-28 bg-mainDark text-white">
       {/* div for (inner)body */}
       <div className="flex flex-col w-full items-center">
         {/* FORM */}
