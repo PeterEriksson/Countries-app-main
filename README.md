@@ -5,7 +5,7 @@
 LINK TO CHALLENGE: https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca
 
 ## Getting Started
-Install npm, then run the development server:
+Install dependencies, then run the development server:
 
 ```bash
 npm install
